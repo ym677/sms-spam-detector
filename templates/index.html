@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>短信垃圾信息识别</title>
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+    <h1>短信垃圾信息识别</h1>
+    <p>输入英文短信内容，系统将判断是否为垃圾信息</p>
+
+    <label for="sender">发送者名字：</label>
+    <input type="text" id="sender" placeholder="可不填写">
+    <br><br>
+
+    <label for="message">短信内容：</label>
+    <input type="text" id="message" placeholder="请输入英文短信">
+    <br><br>
+
+    <button type="button" id="predict-button">开始识别</button>
+
+    <p>判断结果：<span id="result">等待输入</span></p>
+    <p>使用说明：只支持英文短信，判断结果仅供参考</p>
+</body>
+
+
+</html>
